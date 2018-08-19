@@ -1,0 +1,65 @@
+name: Sample
+learning_rate: 0.3
+moody_rate: 0.8
+max_trends: 100
+max_speak_wait: 10
+none_reply: Zzz
+love_rate_response: 0.6
+love_rate_listen: 0.3
+
+ignore_trends:
+  - の
+  - ん
+  - ー
+
+values:
+  - name: 良い
+    value: 1
+  - name: いい
+    value: 1
+  - name: 好き
+    value: 1
+  - name: すき
+    value: 1
+  - name: 最高
+    value: 1
+  - name: 最強
+    value: 1
+  - name: つよい
+    value: 1
+  - name: 強い
+    value: 1
+  - name: かわいい
+    value: 1
+  - name: 可愛い
+    value: 1
+  - name: 大好き
+    value: 1
+  - name: 悪い
+    value: 0
+  - name: わるい
+    value: 0
+  - name: 嫌い
+    value: 0
+  - name: きらい
+    value: 0
+  - name: 駄目
+    value: 0
+  - name: だめ
+    value: 0
+  - name: ダメ
+    value: 0
+  - name: 辛い
+    value: 0
+  - name: つらい
+    value: 0
+  - name: クソ
+    value: 0
+  - name: 最悪
+    value: 0
+  - name: 大嫌い
+    value: 0
+  - name: イヤ
+    value: 0
+  - name: 嫌
+    value: 0

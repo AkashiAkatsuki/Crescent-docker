@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  crescent:
+    build: crescent
+    ports:
+      - "8001:8000"
+    depends_on:
+      - db
+    tty: true
+  db:
+    build: db
+    hostname: 'db'
+    ports:
+      - "3060:3060"
+    environment:
+      POSTGRES_USER: crescent
+      POSTGRES_PASSWORD: cres
+      PGPORT: 5432
+  web:
+    build: web
+    ports:
+      - "81:80"
+    depends_on:
+      - crescent
