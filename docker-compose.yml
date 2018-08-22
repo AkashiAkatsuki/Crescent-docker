@@ -6,6 +6,8 @@ services:
       - "8001:8000"
     depends_on:
       - db
+    volumes:
+      - ${PWD}/crescent/config:/usr/local/src/Crescent/config
     tty: true
   db:
     build: db

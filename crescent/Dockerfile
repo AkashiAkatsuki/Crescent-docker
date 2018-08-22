@@ -18,5 +18,4 @@ ENV LC_TIME C
 RUN git clone https://github.com/AkashiAkatsuki/Crescent $APP_ROOT
 WORKDIR $APP_ROOT
 
-COPY ./config ./config
 RUN bundler
