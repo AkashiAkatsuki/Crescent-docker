@@ -16,6 +16,8 @@ services:
       POSTGRES_USER: crescent
       POSTGRES_PASSWORD: cres
       PGPORT: 5432
+    volumes:
+      - ${PWD}/db/data:/var/lib/postgresql/data
   web:
     build: web
     ports:
